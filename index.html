@@ -1,1272 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Abay Dacha — премиальная дача для отдыха в Ташкенте | Бассейн, мангал, до 12 гостей</title>
-<meta name="description" content="Abay Dacha — уютная дача в районе Абай, Ташкент. 5 комнат, бассейн, мангал, Wi-Fi, парковка. До 12 гостей. Бронируйте онлайн через Telegram или WhatsApp.">
-<meta name="keywords" content="дача в аренду Ташкент, дача Абай, дача с бассейном, дача на сутки, аренда дачи Узбекистан">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://usen158.github.io/Dacha-servise/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Abay Dacha — отдыхайте с комфортом">
-<meta property="og:description" content="Просторная дача с бассейном и мангалом в районе Абай. До 12 гостей. 870 000 сум / сутки.">
-<meta property="og:image" content="assets/images/og-cover.jpg">
-<meta property="og:url" content="https://usen158.github.io/Dacha-servise/">
-<meta property="og:locale" content="ru_RU">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Abay Dacha — отдыхайте с комфортом">
-<meta name="twitter:description" content="Просторная дача с бассейном и мангалом в районе Абай. До 12 гостей.">
-<meta name="twitter:image" content="assets/images/og-cover.jpg">
-
-<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/styles.css">
-
-<!-- Schema.org -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LodgingBusiness",
-  "name": "Abay Dacha",
-  "description": "Просторная дача с бассейном, мангалом и пятью комнатами в районе Абай, Ташкент. До 12 гостей.",
-  "image": "https://usen158.github.io/Dacha-servise/assets/images/hero.jpg",
-  "telephone": "+998998395988",
-  "priceRange": "870000 UZS",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Ташкент, район Абай",
-    "addressCountry": "UZ"
-  },
-  "amenityFeature": [
-    {"@type": "LocationFeatureSpecification", "name": "Бассейн", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Мангал", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Парковка", "value": true}
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "4"
-  }
-}
-</script>
-    <style>
-       /* ==========================================================================
-   Abay Dacha — Premium 2026
-   Tokens: forest green + antique gold + warm cream, Playfair Display + Manrope
-   ========================================================================== */
-
-:root{
-  /* Color tokens */
-  --ink:        #16231d;
-  --forest:     #1f3a2e;
-  --forest-2:   #29493a;
-  --forest-3:   #2f5943;
-  --gold:       #c9a227;
-  --gold-light: #e4c65a;
-  --cream:      #f7f3ea;
-  --sand:       #ece3cd;
-  --pool:       #4f8fa0;
-  --white:      #ffffff;
-
-  --text-on-dark: rgba(247,243,234,.92);
-  --text-on-dark-dim: rgba(247,243,234,.68);
-  --text-body: rgba(22,35,29,.78);
-  --text-heading: var(--ink);
-
-  --glass-bg: rgba(255,255,255,.10);
-  --glass-bg-light: rgba(255,255,255,.55);
-  --glass-border: rgba(255,255,255,.28);
-  --glass-border-light: rgba(31,58,46,.10);
-
-  /* Type */
-  --font-display: 'Playfair Display', 'Georgia', serif;
-  --font-body: 'Manrope', 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-
-  /* Layout */
-  --container: min(1240px, 92vw);
-  --radius-sm: 12px;
-  --radius-md: 20px;
-  --radius-lg: 32px;
-  --radius-pill: 999px;
-
-  --shadow-soft: 0 20px 60px -20px rgba(22,35,29,.25);
-  --shadow-strong: 0 30px 80px -20px rgba(22,35,29,.45);
-  --shadow-gold: 0 14px 40px -12px rgba(201,162,39,.55);
-
-  --ease: cubic-bezier(.22,1,.36,1);
-  --dur: .7s;
-}
-
-/* Reset */
-*, *::before, *::after{ box-sizing: border-box; margin:0; padding:0; }
-html{ scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce){
-  html{ scroll-behavior:auto; }
-  *, *::before, *::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
-}
-
-body{
-  font-family: var(--font-body);
-  color: var(--text-body);
-  background: var(--cream);
-  line-height: 1.6;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
-img{ max-width:100%; display:block; }
-a{ color:inherit; text-decoration:none; }
-ul{ list-style:none; }
-button{ font: inherit; cursor:pointer; border:none; background:none; color:inherit; }
-input, select, textarea{ font: inherit; color: inherit; }
-svg{ fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
-
-.container{ width: var(--container); margin-inline:auto; }
-
-::selection{ background: var(--gold); color: var(--ink); }
-
-/* Focus visibility */
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
-  outline: 2px solid var(--gold);
-  outline-offset: 3px;
-  border-radius: 4px;
-}
-
-/* Typography */
-.eyebrow{
-  font-family: var(--font-mono);
-  font-size: clamp(.72rem, .6rem + .3vw, .82rem);
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: var(--gold);
-  font-weight: 600;
-  margin-bottom: .9rem;
-  display:inline-block;
-}
-.eyebrow--light{ color: var(--gold-light); }
-
-.h2{
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(1.8rem, 1.3rem + 2.2vw, 2.9rem);
-  line-height: 1.15;
-  color: var(--text-heading);
-  letter-spacing: -.01em;
-  margin-bottom: 1rem;
-}
-.h2--light{ color: var(--cream); }
-
-.section-head{ max-width: 640px; margin-bottom: 3rem; }
-.section-head__desc{ font-size: 1.02rem; color: var(--text-body); }
-
-.section{ padding: clamp(4rem, 3rem + 4vw, 7.5rem) 0; position: relative; }
-
-/* Divider (vine-style, not numbered — purely ornamental breathing room) */
-.divider{ display:flex; justify-content:center; padding: .5rem 0; }
-.divider span{ width: 1px; height: 64px; background: linear-gradient(var(--gold), transparent); }
-
-/* ---------- Buttons ---------- */
-.btn{
-  display:inline-flex; align-items:center; justify-content:center; gap:.6rem;
-  padding: 1rem 1.9rem;
-  border-radius: var(--radius-pill);
-  font-weight: 700;
-  font-size: .95rem;
-  letter-spacing: .01em;
-  transition: transform .35s var(--ease), box-shadow .35s var(--ease), background .35s var(--ease), color .35s var(--ease);
-  white-space: nowrap;
-  will-change: transform;
-}
-.btn .icon{ width:18px; height:18px; }
-.btn--gold{
-  background: linear-gradient(135deg, var(--gold-light), var(--gold));
-  color: var(--ink);
-  box-shadow: var(--shadow-gold);
-}
-.btn--gold:hover{ transform: translateY(-3px); box-shadow: 0 20px 50px -12px rgba(201,162,39,.7); }
-.btn--dark{
-  background: var(--forest);
-  color: var(--cream);
-  box-shadow: var(--shadow-soft);
-}
-.btn--dark:hover{ transform: translateY(-3px); background: var(--forest-3); }
-.btn--ghost{
-  background: rgba(255,255,255,.08);
-  color: var(--cream);
-  border: 1px solid rgba(255,255,255,.35);
-  backdrop-filter: blur(10px);
-}
-.btn--ghost:hover{ background: rgba(255,255,255,.18); transform: translateY(-3px); }
-.btn--sm{ padding: .68rem 1.3rem; font-size: .82rem; }
-.btn--lg{ padding: 1.15rem 2.2rem; font-size: 1rem; }
-.btn--block{ width:100%; }
-
-/* ---------- Glass ---------- */
-.glass{
-  background: var(--glass-bg-light);
-  border: 1px solid var(--glass-border-light);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
-  box-shadow: var(--shadow-soft);
-}
-
-/* Placeholder image treatment: shows a rich gradient + label until a real
-   photo is placed at the referenced src (see assets/images/README.txt) */
-.ph-image{
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(120% 140% at 15% 0%, rgba(201,162,39,.35), transparent 60%),
-    linear-gradient(155deg, var(--forest) 0%, var(--forest-2) 45%, var(--ink) 100%);
-  isolation: isolate;
-}
-.ph-image::before{
-  content: attr(data-ph);
-  position:absolute; inset:0;
-  display:flex; align-items:center; justify-content:center;
-  text-align:center; padding: 1rem;
-  font-family: var(--font-mono);
-  font-size: .78rem;
-  letter-spacing:.08em;
-  text-transform: uppercase;
-  color: rgba(247,243,234,.55);
-  z-index:0;
-}
-.ph-image::after{
-  content:'';
-  position:absolute; inset:0;
-  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.04) 0 2px, transparent 2px 14px);
-  z-index:0;
-}
-.ph-image img{ position:relative; z-index:1; width:100%; height:100%; object-fit:cover; }
-
-/* ==========================================================================
-   Preloader
-   ========================================================================== */
-.preloader{
-  position: fixed; inset:0; z-index: 999;
-  background: var(--forest);
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  gap: 1.2rem;
-  transition: opacity .6s var(--ease), visibility .6s var(--ease);
-}
-.preloader.is-hidden{ opacity:0; visibility:hidden; pointer-events:none; }
-.preloader__mark{ position:relative; width:64px; height:64px; display:flex; align-items:center; justify-content:center; }
-.preloader__ring{ position:absolute; inset:0; width:64px; height:64px; }
-.preloader__ring circle{
-  fill:none; stroke: var(--gold); stroke-width:2; stroke-linecap:round;
-  stroke-dasharray: 170; stroke-dashoffset: 170;
-  animation: ring-draw 1.4s var(--ease) infinite;
-}
-@keyframes ring-draw{
-  0%{ stroke-dashoffset: 170; transform: rotate(0deg); }
-  50%{ stroke-dashoffset: 40; }
-  100%{ stroke-dashoffset: 170; transform: rotate(360deg); }
-}
-.preloader__letters{ font-family: var(--font-display); font-weight:700; color: var(--cream); font-size: 1.2rem; }
-.preloader__label{ font-family: var(--font-mono); font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; color: var(--text-on-dark-dim); }
-
-/* ==========================================================================
-   Custom cursor
-   ========================================================================== */
-.cursor{ position:fixed; top:0; left:0; z-index:998; pointer-events:none; mix-blend-mode: difference; }
-.cursor__dot, .cursor__ring{ position:fixed; top:0; left:0; border-radius:50%; transform: translate(-50%,-50%); }
-.cursor__dot{ width:6px; height:6px; background: var(--gold-light); transition: opacity .2s; }
-.cursor__ring{ width:34px; height:34px; border:1px solid var(--gold-light); transition: width .25s var(--ease), height .25s var(--ease), opacity .2s; }
-.cursor.is-active .cursor__ring{ width:48px; height:48px; }
-@media (hover:none), (pointer:coarse){ .cursor{ display:none; } }
-
-/* ==========================================================================
-   Header
-   ========================================================================== */
-.header{
-  position: fixed; inset-inline:0; top:0; z-index: 200;
-  padding: 1.1rem 0;
-  transition: background .4s var(--ease), box-shadow .4s var(--ease), padding .4s var(--ease);
-}
-.header.is-scrolled{
-  background: rgba(247,243,234,.82);
-  backdrop-filter: blur(16px) saturate(160%);
-  box-shadow: 0 10px 30px -18px rgba(22,35,29,.35);
-  padding: .7rem 0;
-}
-.header__inner{ display:flex; align-items:center; justify-content:space-between; gap:1.5rem; }
-
-.brand{ display:flex; align-items:center; gap:.7rem; }
-.brand__mark{
-  width:40px; height:40px; border-radius:50%;
-  display:flex; align-items:center; justify-content:center;
-  background: linear-gradient(135deg, var(--gold-light), var(--gold));
-  color: var(--ink); font-family: var(--font-display); font-weight:700; font-size:.95rem;
-}
-.brand__name{ font-family: var(--font-display); font-weight:600; font-size:1.15rem; color: var(--cream); transition: color .4s var(--ease); }
-.header.is-scrolled .brand__name{ color: var(--ink); }
-
-.nav{ display:flex; gap: 1.8rem; }
-.nav__link{
-  font-size:.92rem; font-weight:600; color: var(--text-on-dark-dim);
-  position:relative; transition: color .3s;
-}
-.nav__link::after{
-  content:''; position:absolute; left:0; right:100%; bottom:-6px; height:2px;
-  background: var(--gold); transition: right .3s var(--ease);
-}
-.nav__link:hover{ color: var(--cream); }
-.nav__link:hover::after{ right:0; }
-.header.is-scrolled .nav__link{ color: rgba(22,35,29,.72); }
-.header.is-scrolled .nav__link:hover{ color: var(--ink); }
-
-.header__actions{ display:flex; align-items:center; gap:1rem; }
-
-.burger{ display:none; flex-direction:column; gap:5px; width:26px; }
-.burger span{ height:2px; width:100%; background: var(--cream); transition: transform .3s, opacity .3s, background .3s; }
-.header.is-scrolled .burger span{ background: var(--ink); }
-.burger[aria-expanded="true"] span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
-.burger[aria-expanded="true"] span:nth-child(2){ opacity:0; }
-.burger[aria-expanded="true"] span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
-
-.mobile-nav{
-  position:fixed; inset: 0; top: 0;
-  background: var(--forest);
-  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1.6rem;
-  transform: translateY(-100%); transition: transform .5s var(--ease);
-  z-index: 190;
-}
-.mobile-nav.is-open{ transform: translateY(0); }
-.mobile-nav__link{ font-family: var(--font-display); font-size:1.4rem; color: var(--cream); }
-
-/* ==========================================================================
-   Hero
-   ========================================================================== */
-.hero{
-  position: relative;
-  min-height: 100svh;
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  overflow: hidden;
-  padding-top: 6rem;
-}
-.hero__bg{ position:absolute; inset:0; z-index:0; }
-.hero__scrim{
-  position:absolute; inset:0; z-index:1;
-  background: linear-gradient(180deg, rgba(22,35,29,.55) 0%, rgba(22,35,29,.72) 60%, rgba(22,35,29,.92) 100%);
-}
-.hero__glow{ position:absolute; border-radius:50%; filter: blur(90px); z-index:1; opacity:.55; animation: float-slow 12s ease-in-out infinite; }
-.hero__glow--a{ width:420px; height:420px; background: var(--gold); top:-10%; right:-8%; }
-.hero__glow--b{ width:360px; height:360px; background: var(--pool); bottom:-15%; left:-10%; animation-delay:-6s; }
-@keyframes float-slow{ 0%,100%{ transform: translateY(0) scale(1); } 50%{ transform: translateY(30px) scale(1.08); } }
-
-.hero__inner{ position:relative; z-index:2; text-align:center; max-width: 880px; }
-.hero__title{
-  font-family: var(--font-display);
-  font-weight:600;
-  font-size: clamp(2.3rem, 1.6rem + 4vw, 4.4rem);
-  line-height: 1.1;
-  color: var(--cream);
-  letter-spacing: -.01em;
-  margin-bottom: 1.4rem;
-}
-.hero__title em{ font-style:italic; color: var(--gold-light); }
-.hero__subtitle{
-  font-size: clamp(1rem, .92rem + .3vw, 1.18rem);
-  color: var(--text-on-dark);
-  max-width: 620px; margin: 0 auto 2.3rem;
-}
-.hero__cta{ display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-bottom: 3rem; }
-
-.hero__stats{
-  display:flex; justify-content:center; gap: clamp(1.2rem, 1rem + 2vw, 3.2rem);
-  flex-wrap:wrap;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(247,243,234,.18);
-}
-.stat{ text-align:center; }
-.stat__num{
-  display:block; font-family: var(--font-mono); font-weight:600;
-  font-size: clamp(1.6rem, 1.3rem + 1.4vw, 2.3rem);
-  color: var(--gold-light);
-}
-.stat__label{ font-size:.8rem; color: var(--text-on-dark-dim); text-transform:uppercase; letter-spacing:.06em; }
-
-.hero__float{
-  position:absolute; z-index:3;
-  padding: .9rem 1.3rem; border-radius: var(--radius-md);
-  font-size:.88rem; font-weight:600; color: var(--cream);
-  display:flex; align-items:center; gap:.5rem;
-  animation: float-card 6s ease-in-out infinite;
-}
-.hero__float--a{ top: 22%; left: 6%; animation-delay: -1.5s; }
-.hero__float--b{ bottom: 20%; right: 6%; }
-.hero__float small{ color: var(--text-on-dark-dim); font-weight:500; }
-@keyframes float-card{ 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(-14px); } }
-.dot{ width:8px; height:8px; border-radius:50%; background: var(--gold-light); display:inline-block; }
-.dot--live{ box-shadow: 0 0 0 0 rgba(228,198,90,.7); animation: pulse 1.8s infinite; }
-@keyframes pulse{ 0%{ box-shadow:0 0 0 0 rgba(228,198,90,.6);} 70%{ box-shadow:0 0 0 10px rgba(228,198,90,0);} 100%{ box-shadow:0 0 0 0 rgba(228,198,90,0);} }
-
-.scroll-cue{
-  position:absolute; bottom: 2rem; left:50%; transform: translateX(-50%);
-  z-index:3; display:flex; flex-direction:column; align-items:center; gap:.4rem;
-  color: var(--text-on-dark-dim); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase;
-  animation: bob 2.2s ease-in-out infinite;
-}
-.scroll-cue svg{ width:18px; height:18px; }
-@keyframes bob{ 0%,100%{ transform: translate(-50%,0);} 50%{ transform: translate(-50%,8px);} }
-
-@media (max-width: 640px){
-  .hero__float{ display:none; }
-}
-
-/* ==========================================================================
-   Reveal on scroll
-   ========================================================================== */
-[data-reveal]{
-  opacity:0; transform: translateY(28px);
-  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
-}
-[data-reveal].in-view{ opacity:1; transform:none; }
-
-/* ==========================================================================
-   About
-   ========================================================================== */
-.about__grid{ display:grid; grid-template-columns: 1.05fr 1fr; gap: clamp(2rem, 1rem + 4vw, 5rem); align-items:center; }
-.about__gallery{ position:relative; }
-.about__img{ border-radius: var(--radius-lg); overflow:hidden; box-shadow: var(--shadow-strong); }
-.about__img--main{ aspect-ratio: 4/5; }
-.about__img--sub{ position:absolute; width: 52%; aspect-ratio:1/1; right:-8%; bottom:-10%; border: 6px solid var(--cream); }
-.about__badge{
-  position:absolute; top:6%; left:-8%;
-  padding:1rem 1.2rem; border-radius: var(--radius-md);
-  display:flex; flex-direction:column; text-align:center;
-}
-.about__badge strong{ font-family: var(--font-display); font-size:1.6rem; color: var(--forest); }
-.about__badge span{ font-size:.72rem; color: var(--text-body); max-width:90px; }
-
-.checklist li{ position:relative; padding-left:1.8rem; margin-bottom:.7rem; font-weight:600; color: var(--ink); }
-.checklist li::before{
-  content:'✓'; position:absolute; left:0; top:0;
-  width:1.2rem; height:1.2rem; border-radius:50%;
-  background: var(--gold); color:var(--ink);
-  font-size:.7rem; display:flex; align-items:center; justify-content:center;
-}
-.checklist--light li{ color: var(--cream); }
-
-.about__content > *{ margin-bottom: 1.2rem; }
-
-@media (max-width: 900px){
-  .about__grid{ grid-template-columns:1fr; }
-  .about__img--sub{ right:0; bottom:-6%; }
-  .about__badge{ left:0; top:-6%; }
-}
-
-/* ==========================================================================
-   Advantages / feature cards
-   ========================================================================== */
-.cards-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
-.feature-card{
-  padding: 2rem 1.7rem; border-radius: var(--radius-md);
-  transition: transform .4s var(--ease), box-shadow .4s var(--ease);
-}
-.feature-card:hover{ transform: translateY(-8px); box-shadow: var(--shadow-strong); }
-.feature-card__icon{
-  width:52px; height:52px; border-radius:50%;
-  display:flex; align-items:center; justify-content:center;
-  background: linear-gradient(135deg, var(--forest), var(--forest-3));
-  color: var(--gold-light); margin-bottom:1.1rem;
-}
-.feature-card__icon svg{ width:24px; height:24px; }
-.feature-card h3{ font-family: var(--font-display); font-size:1.15rem; color: var(--ink); margin-bottom:.4rem; }
-.feature-card p{ font-size:.92rem; }
-
-@media (max-width: 900px){ .cards-grid{ grid-template-columns: repeat(2,1fr); } }
-@media (max-width: 560px){ .cards-grid{ grid-template-columns: 1fr; } }
-
-/* ==========================================================================
-   Stats band
-   ========================================================================== */
-.stats-band{
-  background: linear-gradient(155deg, var(--forest), var(--ink));
-  padding: clamp(2.6rem, 2rem + 2vw, 4rem) 0;
-}
-.stats-band__grid{ display:grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem; text-align:center; }
-.stats-band__num{ display:block; font-family: var(--font-mono); font-weight:700; font-size: clamp(1.8rem,1.4rem + 1.6vw,2.6rem); color: var(--gold-light); }
-.stats-band__label{ font-size:.82rem; color: var(--text-on-dark-dim); text-transform:uppercase; letter-spacing:.05em; }
-@media (max-width: 700px){ .stats-band__grid{ grid-template-columns: repeat(2,1fr); row-gap:2rem; } }
-
-/* ==========================================================================
-   Dacha card
-   ========================================================================== */
-.dacha-card{ display:grid; grid-template-columns: 1fr 1fr; border-radius: var(--radius-lg); overflow:hidden; }
-.dacha-card__media{ position:relative; min-height: 340px; }
-.dacha-card__media img{ width:100%; height:100%; object-fit:cover; }
-.dacha-card__rating{
-  position:absolute; top:1rem; right:1rem; z-index:2;
-  background: rgba(22,35,29,.75); backdrop-filter: blur(8px);
-  color: var(--gold-light); font-weight:700; font-size:.85rem;
-  padding:.4rem .8rem; border-radius: var(--radius-pill);
-}
-.dacha-card__rating small{ color: var(--text-on-dark-dim); font-weight:500; }
-.dacha-card__body{ padding: clamp(1.8rem, 1.4rem + 1.6vw, 2.8rem); display:flex; flex-direction:column; gap:1.3rem; }
-.dacha-card__top{ display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; }
-.dacha-card__top h3{ font-family: var(--font-display); font-size:1.6rem; color: var(--ink); }
-.dacha-card__loc{ display:flex; align-items:center; gap:.4rem; font-size:.88rem; margin-top:.3rem; }
-.icon--sm{ width:16px; height:16px; }
-.dacha-card__price{ text-align:right; }
-.dacha-card__price strong{ font-family: var(--font-mono); font-size:1.3rem; color: var(--forest); display:block; }
-.dacha-card__price span{ font-size:.78rem; color: var(--text-body); }
-
-.amenities{ display:flex; flex-wrap:wrap; gap: .6rem; }
-.amenities li{
-  display:flex; align-items:center; gap:.4rem;
-  font-size:.82rem; font-weight:600; color: var(--ink);
-  background: var(--sand); padding:.5rem .8rem; border-radius: var(--radius-pill);
-}
-.amenities li svg{ width:15px; height:15px; color: var(--forest); }
-
-.dacha-card__actions{ display:flex; gap:1rem; margin-top:auto; }
-
-@media (max-width: 800px){
-  .dacha-card{ grid-template-columns:1fr; }
-  .dacha-card__media{ min-height:240px; }
-}
-
-/* ==========================================================================
-   Gallery
-   ========================================================================== */
-.masonry{
-  columns: 3 260px; column-gap: 1.3rem;
-}
-.masonry__item{
-  break-inside: avoid; margin-bottom: 1.3rem; border-radius: var(--radius-md);
-  overflow:hidden; position:relative; box-shadow: var(--shadow-soft);
-}
-.masonry__item:nth-child(odd){ aspect-ratio: 4/5; }
-.masonry__item:nth-child(even){ aspect-ratio: 1/1; }
-.masonry__item img{ width:100%; height:100%; object-fit:cover; transition: transform .6s var(--ease); }
-.masonry__item:hover img{ transform: scale(1.06); }
-.masonry__item figcaption{
-  position:absolute; left:0; right:0; bottom:0; z-index:2;
-  padding: 1.6rem 1rem .9rem; font-size:.85rem; font-weight:600; color: var(--cream);
-  background: linear-gradient(0deg, rgba(0,0,0,.55), transparent);
-}
-
-/* ==========================================================================
-   Video
-   ========================================================================== */
-.video__grid{ display:grid; grid-template-columns: 1fr 1.1fr; gap: clamp(2rem,1rem + 4vw,4rem); align-items:center; }
-.video__text > *{ margin-bottom: 1.1rem; }
-.video__frame{ position:relative; border-radius: var(--radius-lg); overflow:hidden; aspect-ratio: 16/10; box-shadow: var(--shadow-strong); }
-.video__frame img{ width:100%; height:100%; object-fit:cover; }
-.play-btn{
-  position:absolute; inset:0; margin:auto; width:76px; height:76px; z-index:2;
-  border-radius:50%; display:flex; align-items:center; justify-content:center;
-  background: rgba(247,243,234,.92); color: var(--forest);
-  box-shadow: var(--shadow-strong);
-  transition: transform .35s var(--ease);
-}
-.play-btn svg{ width:26px; height:26px; margin-left:3px; }
-.play-btn:hover{ transform: scale(1.1); }
-@media (max-width: 860px){ .video__grid{ grid-template-columns:1fr; } }
-
-/* ==========================================================================
-   Reviews
-   ========================================================================== */
-.reviews__track{
-  display:grid; grid-auto-flow:column; grid-auto-columns: minmax(280px, 1fr);
-  gap: 1.4rem; overflow-x:auto; padding-bottom: 1rem;
-  scroll-snap-type: x mandatory;
-}
-.reviews__track::-webkit-scrollbar{ height:6px; }
-.reviews__track::-webkit-scrollbar-thumb{ background: var(--sand); border-radius:99px; }
-.review-card{ scroll-snap-align:start; padding: 1.8rem; border-radius: var(--radius-md); }
-.review-card__stars{ color: var(--gold); letter-spacing:.15em; font-size:.9rem; }
-.review-card p{ margin: 1rem 0 1.4rem; font-style:italic; color: var(--ink); font-size:.95rem; }
-.review-card footer{ display:flex; align-items:center; gap:.7rem; }
-.review-card__ava{
-  width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center;
-  background: var(--forest); color: var(--gold-light); font-weight:700; font-family: var(--font-display);
-}
-.review-card footer strong{ display:block; font-size:.88rem; color: var(--ink); }
-.review-card footer small{ font-size:.75rem; color: var(--text-body); }
-
-/* ==========================================================================
-   Trust
-   ========================================================================== */
-.trust{ padding-top:0; padding-bottom:0; }
-.trust__label{ text-align:center; font-size:.78rem; text-transform:uppercase; letter-spacing:.12em; color: var(--text-body); margin-bottom:1.4rem; }
-.trust__row{ display:flex; flex-wrap:wrap; justify-content:center; gap:.9rem; padding-bottom: clamp(3rem,2rem + 3vw,5rem); }
-.trust__badge{
-  display:flex; align-items:center; gap:.5rem;
-  padding:.7rem 1.1rem; border-radius: var(--radius-pill);
-  background: var(--sand); font-size:.82rem; font-weight:600; color: var(--forest);
-}
-.trust__badge svg{ width:16px; height:16px; color: var(--gold); }
-
-/* ==========================================================================
-   FAQ
-   ========================================================================== */
-.faq__grid{ display:grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem,1rem + 4vw,4rem); }
-.faq__grid > div:first-child > *{ margin-bottom:1.1rem; }
-.accordion__item{ border-bottom: 1px solid var(--glass-border-light); }
-.accordion__q{
-  width:100%; display:flex; justify-content:space-between; align-items:center;
-  padding: 1.3rem 0; font-family: var(--font-display); font-size:1.05rem; color: var(--ink); text-align:left;
-}
-.accordion__plus{ position:relative; width:18px; height:18px; flex:none; }
-.accordion__plus::before, .accordion__plus::after{
-  content:''; position:absolute; background: var(--forest); border-radius:2px;
-}
-.accordion__plus::before{ inset: 8px 0; height:2px; }
-.accordion__plus::after{ inset: 0 8px; width:2px; transition: transform .3s var(--ease); }
-.accordion__item.is-open .accordion__plus::after{ transform: rotate(90deg); }
-.accordion__a{ max-height:0; overflow:hidden; transition: max-height .4s var(--ease); }
-.accordion__a p{ padding-bottom:1.3rem; font-size:.94rem; }
-@media (max-width: 860px){ .faq__grid{ grid-template-columns:1fr; } }
-
-/* ==========================================================================
-   Booking
-   ========================================================================== */
-.booking{
-  background: linear-gradient(160deg, var(--forest) 0%, var(--ink) 100%);
-  color: var(--text-on-dark);
-}
-.booking__grid{ display:grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem,1rem + 4vw,4rem); align-items:center; }
-.booking__desc{ color: var(--text-on-dark-dim); margin-bottom:1.4rem; }
-.booking-form{ padding: clamp(1.8rem,1.4rem + 1.6vw,2.6rem); border-radius: var(--radius-lg); display:flex; flex-direction:column; gap:1.1rem; }
-.form-row label{ display:block; font-size:.82rem; font-weight:700; color: var(--ink); margin-bottom:.4rem; }
-.form-row label em{ font-weight:500; color: var(--text-body); font-style:normal; }
-.form-row input, .form-row select, .form-row textarea{
-  width:100%; padding: .85rem 1rem; border-radius: var(--radius-sm);
-  border: 1px solid var(--glass-border-light); background: rgba(255,255,255,.7);
-  transition: border-color .25s, box-shadow .25s;
-}
-.form-row input:focus, .form-row select:focus, .form-row textarea:focus{
-  outline:none; border-color: var(--gold); box-shadow: 0 0 0 4px rgba(201,162,39,.18);
-}
-.form-row--split{ display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
-.booking-form__hint{ font-size:.78rem; color: var(--text-body); text-align:center; }
-@media (max-width: 860px){ .booking__grid{ grid-template-columns:1fr; } }
-@media (max-width: 480px){ .form-row--split{ grid-template-columns:1fr; } }
-
-/* ==========================================================================
-   Contacts
-   ========================================================================== */
-.contacts__grid{ display:grid; grid-template-columns: 1fr 1.1fr; gap: clamp(2rem,1rem + 4vw,4rem); align-items:center; }
-.contact-list{ display:flex; flex-direction:column; gap:.9rem; margin-top:1.6rem; }
-.contact-item{
-  display:flex; align-items:center; gap:.9rem;
-  padding:.9rem 1.2rem; border-radius: var(--radius-md);
-  background: var(--sand); font-weight:700; color: var(--ink);
-  transition: transform .3s var(--ease), background .3s;
-}
-.contact-item:hover{ transform: translateX(6px); background: var(--gold-light); }
-.contact-item__icon{
-  width:38px; height:38px; border-radius:50%; flex:none;
-  display:flex; align-items:center; justify-content:center;
-  background: var(--forest); color: var(--gold-light);
-}
-.contact-item__icon svg{ width:18px; height:18px; }
-.map-frame{ border-radius: var(--radius-lg); overflow:hidden; box-shadow: var(--shadow-strong); aspect-ratio: 4/3; }
-.map-frame iframe{ width:100%; height:100%; border:0; filter: grayscale(.15) contrast(1.05); }
-@media (max-width: 860px){ .contacts__grid{ grid-template-columns:1fr; } }
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-.footer{ background: var(--ink); color: var(--text-on-dark-dim); padding-top: clamp(3rem,2rem + 3vw,5rem); }
-.footer__inner{ display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap:2rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(247,243,234,.12); }
-.footer__brand p{ margin-top:1rem; max-width:280px; font-size:.9rem; }
-.brand--footer .brand__name{ color: var(--cream); }
-.footer__col h4{ font-family: var(--font-display); color: var(--cream); font-size:1rem; margin-bottom:1rem; }
-.footer__col a{ display:block; margin-bottom:.6rem; font-size:.9rem; transition: color .25s; }
-.footer__col a:hover{ color: var(--gold-light); }
-.footer__bottom{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:.6rem; padding: 1.6rem 0; font-size:.8rem; }
-@media (max-width: 860px){ .footer__inner{ grid-template-columns: 1fr 1fr; } }
-@media (max-width: 520px){ .footer__inner{ grid-template-columns: 1fr; } }
-
-/* ==========================================================================
-   Floating actions
-   ========================================================================== */
-.floating-actions{
-  position: fixed; right: clamp(1rem,3vw,2rem); bottom: clamp(1rem,3vw,2rem); z-index: 150;
-  display:flex; flex-direction:column; gap:.8rem;
-}
-.fab{
-  width:52px; height:52px; border-radius:50%;
-  display:flex; align-items:center; justify-content:center;
-  box-shadow: var(--shadow-strong);
-  transition: transform .3s var(--ease), opacity .3s var(--ease);
-}
-.fab svg{ width:24px; height:24px; }
-.fab--whatsapp{ background:#25D366; color:#fff; }
-.fab--telegram{ background:#229ED9; color:#fff; }
-.fab--top{ background: var(--forest); color: var(--gold-light); opacity:0; pointer-events:none; transform: scale(.7); }
-.fab--top.is-visible{ opacity:1; pointer-events:auto; transform:scale(1); }
-.fab:hover{ transform: translateY(-4px) scale(1.05); }
-
-/* ==========================================================================
-   Toast
-   ========================================================================== */
-.toast{
-  position: fixed; left:50%; bottom: 2rem; transform: translate(-50%, 30px);
-  background: var(--ink); color: var(--cream); padding: 1rem 1.6rem; border-radius: var(--radius-pill);
-  font-size:.9rem; font-weight:600; box-shadow: var(--shadow-strong);
-  opacity:0; pointer-events:none; transition: opacity .35s var(--ease), transform .35s var(--ease);
-  z-index: 300; max-width: 90vw; text-align:center;
-}
-.toast.is-visible{ opacity:1; transform: translate(-50%, 0); }
-
-/* ==========================================================================
-   Responsive fine-tuning
-   ========================================================================== */
-@media (max-width: 1024px){
-  .nav{ display:none; }
-  .burger{ display:flex; }
-}
-@media (max-width: 480px){
-  .btn--lg{ padding:.95rem 1.6rem; font-size:.9rem; }
-  .hero__cta{ flex-direction:column; width:100%; }
-  .hero__cta .btn{ width:100%; }
-  .masonry{ columns: 1 100%; }
-}
- 
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дача Абай — Главная</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Preloader -->
-<div class="preloader" id="preloader" aria-hidden="true">
-  <div class="preloader__mark">
-    <svg viewBox="0 0 64 64" class="preloader__ring">
-      <circle cx="32" cy="32" r="27"></circle>
-    </svg>
-    <span class="preloader__letters">AD</span>
-  </div>
-  <span class="preloader__label">Abay Dacha</span>
-</div>
+        <!-- Адаптивная навигация с бургер-меню -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Дача Абай</a>
+        
+        <!-- Меню (на мобильных получит класс active) -->
+        <nav class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О даче</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+        
+        <button class="btn-contact" id="contactBtn">Связаться</button>
 
-<!-- Custom cursor -->
-<div class="cursor" id="cursor" aria-hidden="true">
-  <div class="cursor__dot"></div>
-  <div class="cursor__ring"></div>
-</div>
-
-<!-- Header -->
-<header class="header" id="header">
-  <div class="container header__inner">
-    <a href="#hero" class="brand">
-      <span class="brand__mark">AD</span>
-      <span class="brand__name">Abay Dacha</span>
-    </a>
-
-    <nav class="nav" id="nav">
-      <a href="#about" class="nav__link">О даче</a>
-      <a href="#advantages" class="nav__link">Преимущества</a>
-      <a href="#dacha" class="nav__link">Дача</a>
-      <a href="#gallery" class="nav__link">Галерея</a>
-      <a href="#reviews" class="nav__link">Отзывы</a>
-      <a href="#faq" class="nav__link">Вопросы</a>
-      <a href="#contacts" class="nav__link">Контакты</a>
-    </nav>
-
-    <div class="header__actions">
-      <a href="#booking" class="btn btn--gold btn--sm">Забронировать</a>
-      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-
-  <div class="mobile-nav" id="mobileNav">
-    <a href="#about" class="mobile-nav__link">О даче</a>
-    <a href="#advantages" class="mobile-nav__link">Преимущества</a>
-    <a href="#dacha" class="mobile-nav__link">Дача</a>
-    <a href="#gallery" class="mobile-nav__link">Галерея</a>
-    <a href="#reviews" class="mobile-nav__link">Отзывы</a>
-    <a href="#faq" class="mobile-nav__link">Вопросы</a>
-    <a href="#contacts" class="mobile-nav__link">Контакты</a>
-    <a href="#booking" class="btn btn--gold btn--block">Забронировать</a>
-  </div>
-</header>
-
-<main>
-
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero__bg ph-image" data-ph="Фасад Abay Dacha">
-      <img src="./assets/images/toch1.jpg" alt="Фасад и терраса дачи Abay Dacha в районе Абай" loading="eager" onerror="this.remove()">
-    </div>
-    <div class="hero__scrim"></div>
-    <div class="hero__glow hero__glow--a"></div>
-    <div class="hero__glow hero__glow--b"></div>
-
-    <div class="container hero__inner">
-      <p class="eyebrow reveal" data-reveal>Район Абай · Ташкент · Сезон 2026 открыт</p>
-      <h1 class="hero__title reveal" data-reveal>
-        Дом среди сада,<br> где отдыхает <em>вся семья</em>
-      </h1>
-      <p class="hero__subtitle reveal" data-reveal>
-        Abay Dacha — просторная территория с бассейном, мангальной зоной и пятью светлыми
-        комнатами. До 12 гостей, приватный двор и сервис, которому доверяют.
-      </p>
-
-      <div class="hero__cta reveal" data-reveal>
-        <a href="#booking" class="btn btn--gold btn--lg">
-          <span>Забронировать даты</span>
-        </a>
-        <a href="https://t.me/timenub" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M21.5 3.5 2.7 10.9c-1.1.4-1.1 1 .1 1.4l4.8 1.5 1.8 5.7c.2.6.4.8.9.8.3 0 .5-.1.7-.3l2.6-2.5 4.9 3.6c.9.5 1.5.2 1.8-.8L22.4 4.7c.3-1.2-.4-1.7-1.5-1.2z"/></svg>
-          <span>Написать в Telegram</span>
-        </a>
-      </div>
-
-      <div class="hero__stats reveal" data-reveal>
-        <div class="stat">
-          <span class="stat__num" data-count="5">0</span>
-          <span class="stat__label">комнат</span>
+        <!-- Кнопка бургер-меню -->
+        <div class="burger-menu" id="burgerToggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="stat">
-          <span class="stat__num" data-count="12">0</span>
-          <span class="stat__label">гостей</span>
-        </div>
-        <div class="stat">
-          <span class="stat__num" data-count="870" data-suffix="K">0</span>
-          <span class="stat__label">сум / сутки</span>
-        </div>
-        <div class="stat">
-          <span class="stat__num" data-decimal="5.0">0</span>
-          <span class="stat__label">рейтинг гостей</span>
-        </div>
-      </div>
-    </div>
+    </header>
 
-    <div class="hero__float hero__float--a glass reveal" data-reveal>
-      <span class="dot dot--live"></span> Сезон 2026 открыт
-    </div>
-    <div class="hero__float hero__float--b glass reveal" data-reveal>
-      ★ 5.0 <small>· гости в восторге</small>
-    </div>
 
-    <a href="#about" class="scroll-cue" aria-label="Прокрутить вниз">
-      <span>Листайте</span>
-      <svg viewBox="0 0 24 24"><path d="M12 4v14m0 0-6-6m6 6 6-6"/></svg>
-    </a>
-  </section>
-
-  <div class="divider" aria-hidden="true"><span></span></div>
-
-  <!-- ABOUT -->
-  <section class="section about" id="about">
-    <div class="container about__grid">
-      <div class="about__gallery reveal" data-reveal>
-        <div class="about__img about__img--main ph-image" data-ph="Двор Abay Dacha">
-          <img src="./assets/images/2.jpg" alt="Тенистый двор с бассейном на территории Abay Dacha" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="about__img about__img--sub ph-image" data-ph="Бассейн">
-          <img src="./assets/images/3.jpg" alt="Бассейн с зоной отдыха Abay Dacha" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="about__badge glass">
-          <strong>15+</strong>
-          <span>соток ухоженной территории</span>
-        </div>
-      </div>
-
-      <div class="about__content">
-        <p class="eyebrow reveal" data-reveal>О нас</p>
-        <h2 class="h2 reveal" data-reveal>Тихий двор в самом Ташкенте</h2>
-        <p class="reveal" data-reveal>
-          Abay Dacha — уютное место для отдыха в Ташкенте. Мы предлагаем комфортную дачу
-          для семейного отдыха, встреч с друзьями и проведения мероприятий. Просторная
-          территория, бассейн и современные удобства создают идеальную атмосферу
-          для незабываемого отдыха.
-        </p>
-        <ul class="checklist reveal" data-reveal>
-          <li>Комфортное размещение для всей семьи</li>
-          <li>Бассейн с зоной отдыха и качелями</li>
-          <li>Тенистый двор с фруктовыми деревьями</li>
-          <li>Подходит для праздников и мероприятий</li>
-        </ul>
-        <a href="#booking" class="btn btn--dark reveal" data-reveal>Узнать о бронировании</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ADVANTAGES -->
-  
-  <!-- STATISTICS -->
-  <section class="section stats-band">
-    <div class="container stats-band__grid">
-      <div class="stats-band__item reveal" data-reveal>
-        <span class="stats-band__num" data-count="4">0</span>
-        <span class="stats-band__label">отзыва гостей</span>
-      </div>
-      <div class="stats-band__item reveal" data-reveal>
-        <span class="stats-band__num" data-decimal="5.0">0</span>
-        <span class="stats-band__label">средний рейтинг</span>
-      </div>
-      <div class="stats-band__item reveal" data-reveal>
-        <span class="stats-band__num" data-count="2026">0</span>
-        <span class="stats-band__label">сезон открыт</span>
-      </div>
-      <div class="stats-band__item reveal" data-reveal>
-        <span class="stats-band__num" data-static="24/7">24/7</span>
-        <span class="stats-band__label">на связи в Telegram</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- DACHA CARD -->
-  <section class="section dacha" id="dacha">
-    <div class="container">
-      <div class="section-head reveal" data-reveal>
-        <p class="eyebrow">Каталог</p>
-        <h2 class="h2">Дача, которую полюбят ваши гости</h2>
-      </div>
-
-      <article class="dacha-card glass reveal" data-reveal>
-        <div class="dacha-card__media ph-image" data-ph="Abay Dacha">
-          <img src="./assets/images/4.jpg" alt="Бассейн и терраса Abay Dacha" loading="lazy" onerror="this.remove()">
-          <span class="dacha-card__rating">★ 5.0 <small>(4)</small></span>
-        </div>
-        <div class="dacha-card__body">
-          <div class="dacha-card__top">
-            <div>
-              <h3>Abay Dacha</h3>
-              <p class="dacha-card__loc">
-                <svg viewBox="0 0 24 24" class="icon icon--sm"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-                Район Абай, Ташкент
-              </p>
+        <!-- Насыщенный Главный экран -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Отдых от городской суеты</h1>
+            <p>Премиальное эко-пространство для загородной жизни, семейного отдыха и полной перезагрузки ума.</p>
+            
+            <!-- Добавляем блок ключевых цифр -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">минут от города</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">Дача</span>
+                    <span class="stat-label">1-Сутка</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">тишина и уют</span>
+                </div>
             </div>
-            <div class="dacha-card__price">
-              <strong>870 000 сум</strong>
-              <span>/ сутки</span>
+
+            <!-- Кнопки действия -->
+            <div class="hero-buttons">
+                <a href="gallery.html" class="btn-primary">Смотреть галерею</a>
+                <a href="about.html" class="btn-secondary">О даче и цены</a>
             </div>
-          </div>
 
-          <ul class="amenities">
-            <li><svg viewBox="0 0 24 24"><path d="M4 21v-7a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v7"/></svg>5 комнат</li>
-            <li><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 16 0"/></svg>До 12 гостей</li>
-            <li><svg viewBox="0 0 24 24"><path d="M6 16V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v10"/></svg>Бассейн</li>
-            <li><svg viewBox="0 0 24 24"><path d="M12 2c2 3-1 4-1 6a3 3 0 1 0 6 0c0-1 0-2-1-3 2 1 4 4 4 7a7 7 0 1 1-14 0c0-4 3-7 6-10Z"/></svg>Мангал</li>
-            <li><svg viewBox="0 0 24 24"><path d="M5 12.5a11 11 0 0 1 14 0"/></svg>Wi-Fi</li>
-            <li><svg viewBox="0 0 24 24"><path d="M5 11 12 5l7 6"/></svg>Парковка</li>
-          </ul>
+            <!-- Маленькие карточки-преимущества в самом низу экрана -->
+            <div class="hero-features">
+                <div class="feat-box">
+                    <h4>Крутой кухня</h4>
+                    <p>с Мангалом</p>
+                </div>
+                <div class="feat-box">
+                    <h4>🏡 Беседка</h4>
+                    <p>Вид на вековой лес</p>
+                </div>
+                <div class="feat-box">
+                    <h4>🌲 Двор для игр</h4>
+                    <p>Вдали от трасс и шума</p>
+                </div>
+            </div>
 
-          <div class="dacha-card__actions">
-            <a href="#about" class="btn btn--dark">Подробнее</a>
-            <a href="#booking" class="btn btn--gold">Забронировать</a>
-          </div>
         </div>
-      </article>
+    </section>
+
+          <!-- Новая секция: Развлечения -->
+    
+    <!-- Новая секция: Бронирование и календарь -->
+        <!-- Новая премиальная секция бронирования взамен календаря -->
+    <section class="section" style="background: #ffffff; border-radius: 40px; margin: 60px auto; max-width: 90%; border: 1px solid #eef0ec; box-shadow: 0 20px 50px rgba(42, 71, 54, 0.03);">
+        <div class="booking-modern">
+            <div class="booking-header-block">
+                <h2>Начните своё загородное приключение</h2>
+                <p class="subtitle" style="margin-bottom: 0;">Выберите удобные даты, чтобы зафиксировать за собой дом</p>
+            </div>
+            
+            <form class="booking-form-grid" id="mainBookingForm">
+                <!-- Поле: Дата заезда -->
+                <div class="booking-input-box">
+                    <label for="checkin">Дата заезда</label>
+                    <input type="date" id="checkin" required>
+                </div>
+                
+                <!-- Поле: Дата выезда -->
+                <div class="booking-input-box">
+                    <label for="checkout">Дата выезда</label>
+                    <input type="date" id="checkout" required>
+                </div>
+                
+                <!-- Поле: Количество гостей -->
+                <div class="booking-input-box">
+                    <label for="guests">Количество гостей</label>
+                    <select id="guests">
+                        <option value="1">1 гость</option>
+                        <option value="2">2 гостя</option>
+                        <option value="4" selected>До 4 гостей</option>
+                        <option value="6">До 6 гостей</option>
+                        <option value="custom">Больше (компания)</option>
+                    </select>
+                </div>
+                
+                <!-- Кнопка отправки -->
+                <div class="booking-submit-box">
+                    <button type="submit" class="btn-primary" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; padding: 0;">
+                        Проверить доступность
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Модальное окно скрыто по умолчанию -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-btn" style="position:absolute; top:20px; right:25px; font-size:28px; cursor:pointer;">&times;</span>
+            <h2 style="margin-bottom:10px;">Забронировать отдых</h2>
+            <p style="color:#718096; margin-bottom:20px;">Оставьте контакты, мы перезвоним в течение 15 минут.</p>
+            <form style="display:flex; flex-direction:column; gap:15px;">
+                <input type="text" placeholder="Ваше имя" style="padding:16px; border:1px solid #e2e8f0; border-radius:12px;" required>
+                <input type="tel" placeholder="Номер телефона" style="padding:16px; border:1px solid #e2e8f0; border-radius:12px;" required>
+                <button type="submit" class="btn-contact" style="padding:16px; border-radius:12px;">Отправить заявку</button>
+            </form>
+        </div>
     </div>
-  </section>
+    <!-- Современный футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Дача Абай</div>
+            <p class="footer-copy">© 2026 Моя Уютная Дача. Все права защищены.</p>
+            <div class="footer-socials">
+               <a href="https://t.me./timenub" target="_blank">Telegram</a>
 
-  <!-- GALLERY -->
-  <section class="section gallery" id="gallery">
-    <div class="container">
-      <div class="section-head reveal" data-reveal>
-        <p class="eyebrow">Атмосфера</p>
-        <h2 class="h2">Дача в деталях</h2>
-        <p class="section-head__desc">Бассейн, тенистый двор, светлые спальни — реальные фотографии территории.</p>
-      </div>
-
-      <div class="masonry">
-        <figure class="masonry__item ph-image reveal" data-reveal data-ph="Бассейн">
-          <img src="./assets/images/5.jpg" alt="Бассейн с мозаикой и качелями на территории Abay Dacha" loading="lazy" onerror="this.remove()">
-          <figcaption>Бассейн и зона отдыха</figcaption>
-        </figure>
-        <figure class="masonry__item ph-image reveal" data-reveal data-ph="Цветники">
-          <img src="./assets/images/6.jpg" alt="Вид на бассейн и цветники Abay Dacha" loading="lazy" onerror="this.remove()">
-          <figcaption>Цветники у бассейна</figcaption>
-        </figure>
-        <figure class="masonry__item ph-image reveal" data-reveal data-ph="Терраса">
-          <img src="./assets/images/7.jpg" alt="Терраса и фасад дома Abay Dacha" loading="lazy" onerror="this.remove()">
-          <figcaption>Терраса и фасад</figcaption>
-        </figure>
-        <figure class="masonry__item ph-image reveal" data-reveal data-ph="Спальня">
-          <img src="./assets/images/8.jpg" alt="Спальная комната с кроватями Abay Dacha" loading="lazy" onerror="this.remove()">
-          <figcaption>Спальная комната</figcaption>
-        </figure>
-        <figure class="masonry__item ph-image reveal" data-reveal data-ph="Двор">
-          <img src="./assets/images/4.jpg" alt="Bassein Abay Dacha" loading="lazy" onerror="this.remove()">
-          <figcaption>Тенистый двор</figcaption>
-        </figure>
-        <figure class="masonry__item ph-image reveal" data-reveal data-ph="Фасад">
-          <img src="./assets/images/9.jpg" alt="Фасад и терраса Abay Dacha" loading="lazy" onerror="this.remove()">
-          <figcaption>Фасад и терраса</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- VIDEO -->
-  <section class="section video">
-    <div class="container video__grid">
-      <div class="video__text reveal" data-reveal>
-        <p class="eyebrow">Видео</p>
-        <h2 class="h2">Посмотрите на дачу вживую</h2>
-        <p>Короткие видео с территории, бассейна и вечерних посиделок — в нашем Instagram.</p>
-        <a href="https://instagram.com/usensardorbekov" target="_blank" rel="noopener" class="btn btn--dark">
-          <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-          <span>Смотреть в Instagram</span>
-        </a>
-      </div>
-      <div class="video__frame ph-image reveal" data-reveal data-ph="Видео тур">
-        <img src="assets/images/video-poster.jpg" alt="Видео тур по территории Abay Dacha" loading="lazy" onerror="this.remove()">
-        <a href="https://instagram.com/usensardorbekov" target="_blank" rel="noopener" class="play-btn" aria-label="Смотреть видео">
-          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7Z"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- REVIEWS -->
-  <section class="section reviews" id="reviews">
-    <div class="container">
-      <div class="section-head reveal" data-reveal>
-        <p class="eyebrow">Отзывы гостей</p>
-        <h2 class="h2">Что говорят о Abay Dacha</h2>
-      </div>
-
-      <div class="reviews__track">
-        <blockquote class="review-card glass reveal" data-reveal>
-          <span class="review-card__stars">★★★★★</span>
-          <p>«Отмечали день рождения большой компанией — всем хватило места. Бассейн отличный,
-            мангал на месте, территория ухоженная. Обязательно вернёмся!»</p>
-          <footer><span class="review-card__ava">Д</span><div><strong>Дильноза</strong><small>Ташкент</small></div></footer>
-        </blockquote>
-        <blockquote class="review-card glass reveal" data-reveal>
-          <span class="review-card__stars">★★★★★</span>
-          <p>«Бронировали на выходные с семьёй. Дача очень тёплая по атмосфере, двор тенистый,
-            дети были в восторге от бассейна. Хозяин на связи всегда.»</p>
-          <footer><span class="review-card__ava">Р</span><div><strong>Рустам</strong><small>Ташкент</small></div></footer>
-        </blockquote>
-        <blockquote class="review-card glass reveal" data-reveal>
-          <span class="review-card__stars">★★★★★</span>
-          <p>«Идеальное место для корпоратива. Просторно, чисто, есть всё необходимое.
-            Парковка рядом, Wi-Fi работал отлично весь вечер.»</p>
-          <footer><span class="review-card__ava">А</span><div><strong>Азиз</strong><small>Ташкент</small></div></footer>
-        </blockquote>
-        <blockquote class="review-card glass reveal" data-reveal>
-          <span class="review-card__stars">★★★★★</span>
-          <p>«Уже второй раз снимаем именно эту дачу. Бассейн чистый, комнаты светлые,
-            цена полностью оправдана. Рекомендуем!»</p>
-          <footer><span class="review-card__ava">М</span><div><strong>Малика</strong><small>Ташкент</small></div></footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRUST / PARTNERS -->
-  <section class="section trust">
-    <div class="container">
-      <p class="trust__label reveal" data-reveal>Нам доверяют</p>
-      <div class="trust__row reveal" data-reveal>
-        <span class="trust__badge"><svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg>Instagram подтверждён</span>
-        <span class="trust__badge"><svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg>Telegram на связи 24/7</span>
-        <span class="trust__badge"><svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg>Оплата без предоплаты онлайн</span>
-        <span class="trust__badge"><svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg>Реальные отзывы гостей</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section faq" id="faq">
-    <div class="container faq__grid">
-      <div class="reveal" data-reveal>
-        <p class="eyebrow">Частые вопросы</p>
-        <h2 class="h2">Всё, что нужно знать перед бронированием</h2>
-        <p class="section-head__desc">Не нашли ответ? Напишите нам в Telegram — ответим в течение дня.</p>
-        <a href="https://t.me/timenub" target="_blank" rel="noopener" class="btn btn--dark">Написать в Telegram</a>
-      </div>
-
-      <div class="accordion reveal" data-reveal>
-        <div class="accordion__item">
-          <button class="accordion__q">Как забронировать дачу?<span class="accordion__plus"></span></button>
-          <div class="accordion__a"><p>Заполните форму бронирования ниже или напишите нам в Telegram — уточним свободные даты и подтвердим заявку в течение дня.</p></div>
+                <a href="https://wa.me./998295988">WhatsApp</a>
+                <a href="https://instagram.com./sardorbekovusen" target="_blank">Instagram</a>
+            </div>
         </div>
-        <div class="accordion__item">
-          <button class="accordion__q">Нужна ли предоплата?<span class="accordion__plus"></span></button>
-          <div class="accordion__a"><p>Условия оплаты и предоплаты уточняются индивидуально при подтверждении даты — расскажем всё при бронировании.</p></div>
-        </div>
-        <div class="accordion__item">
-          <button class="accordion__q">Во сколько заезд и выезд?</button>
-          <div class="accordion__a"><p>Время заезда и выезда согласовывается с хозяином под ваш график — сообщите удобное время при бронировании.</p></div>
-        </div>
-        <div class="accordion__item">
-          <button class="accordion__q">Можно ли с детьми и животными?<span class="accordion__plus"></span></button>
-          <div class="accordion__a"><p>Дача отлично подходит для семейного отдыха с детьми. По поводу животных — уточняйте, пожалуйста, заранее.</p></div>
-        </div>
-        <div class="accordion__item">
-          <button class="accordion__q">Что входит в стоимость?<span class="accordion__plus"></span></button>
-          <div class="accordion__a"><p>В стоимость входит доступ ко всей территории: бассейн, мангальная зона, Wi-Fi и парковка.</p></div>
-        </div>
-        <div class="accordion__item">
-          <button class="accordion__q">Как отменить или перенести бронь?<span class="accordion__plus"></span></button>
-          <div class="accordion__a"><p>Напишите нам в Telegram как можно раньше — постараемся перенести даты или подобрать удобное решение.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- BOOKING -->
-  <section class="section booking" id="booking">
-    <div class="container booking__grid">
-      <div class="booking__text reveal" data-reveal>
-        <p class="eyebrow eyebrow--light">Бронирование</p>
-        <h2 class="h2 h2--light">Оставьте заявку</h2>
-        <p class="booking__desc">Мы свяжемся с вами в течение дня, чтобы подтвердить даты. Заявка автоматически откроется в Telegram — останется только нажать «Отправить».</p>
-        <ul class="checklist checklist--light">
-          <li>Без скрытых платежей и комиссий</li>
-          <li>Подтверждение в течение дня</li>
-          <li>Можно изменить даты после отправки</li>
-        </ul>
-      </div>
-
-      <form class="booking-form glass" id="bookingForm" novalidate>
-        <div class="form-row">
-          <label for="f-name">Имя</label>
-          <input type="text" id="f-name" name="name" placeholder="Введите имя" required>
-        </div>
-        <div class="form-row">
-          <label for="f-phone">Телефон</label>
-          <input type="tel" id="f-phone" name="phone" placeholder="+998 __ ___ __ __" required>
-        </div>
-        <div class="form-row form-row--split">
-          <div>
-            <label for="f-checkin">Дата заезда</label>
-            <input type="date" id="f-checkin" name="checkin" required>
-          </div>
-          <div>
-            <label for="f-checkout">Дата выезда</label>
-            <input type="date" id="f-checkout" name="checkout" required>
-          </div>
-        </div>
-        <div class="form-row">
-          <label for="f-guests">Количество гостей</label>
-          <select id="f-guests" name="guests" required>
-            <option value="" disabled selected>Выберите количество</option>
-            <option value="1–2 гостя">1–2 гостя</option>
-            <option value="3–5 гостей">3–5 гостей</option>
-            <option value="6–8 гостей">6–8 гостей</option>
-            <option value="9–12 гостей">9–12 гостей</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label for="f-comment">Комментарий <em>(необязательно)</em></label>
-          <textarea id="f-comment" name="comment" rows="3" placeholder="Например: нужен ранний заезд"></textarea>
-        </div>
-        <button type="submit" class="btn btn--gold btn--block">Отправить заявку</button>
-        <p class="booking-form__hint">Нажимая «Отправить», вы перейдёте в Telegram с готовым текстом заявки.</p>
-      </form>
-    </div>
-  </section>
-
-  <!-- CONTACTS + MAP -->
-  <section class="section contacts" id="contacts">
-    <div class="container contacts__grid">
-      <div class="reveal" data-reveal>
-        <p class="eyebrow">Свяжитесь с нами</p>
-        <h2 class="h2">Забронируйте даты прямо сейчас</h2>
-
-        <div class="contact-list">
-          <a href="tel:+998998395988" class="contact-item">
-            <span class="contact-item__icon"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c1 .4 2 .6 3 .7a2 2 0 0 1 1.7 2Z"/></svg></span>
-            <span>+998 99 839 59 88</span>
-          </a>
-          <a href="https://t.me/timenub" target="_blank" rel="noopener" class="contact-item">
-            <span class="contact-item__icon"><svg viewBox="0 0 24 24"><path d="M21.5 3.5 2.7 10.9c-1.1.4-1.1 1 .1 1.4l4.8 1.5 1.8 5.7c.2.6.4.8.9.8.3 0 .5-.1.7-.3l2.6-2.5 4.9 3.6c.9.5 1.5.2 1.8-.8L22.4 4.7c.3-1.2-.4-1.7-1.5-1.2z"/></svg></span>
-            <span>Telegram · @timenub</span>
-          </a>
-          <a href="https://instagram.com/usensardorbekov" target="_blank" rel="noopener" class="contact-item">
-            <span class="contact-item__icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span>
-            <span>Instagram · @usensardorbekov</span>
-          </a>
-          <a href="https://wa.me/998998395988" target="_blank" rel="noopener" class="contact-item">
-            <span class="contact-item__icon"><svg viewBox="0 0 24 24"><path d="M4 20l1.4-4.2A8 8 0 1 1 9 18.4L4 20Z"/></svg></span>
-            <span>WhatsApp · написать</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="map-frame reveal" data-reveal>
-        <iframe
-          src="https://www.google.com/maps?q=Tashkent%2C+Abay&output=embed"
-          title="Карта — район Абай, Ташкент"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <a href="#hero" class="brand brand--footer">
-        <span class="brand__mark">AD</span>
-        <span class="brand__name">Abay Dacha</span>
-      </a>
-      <p>Дача для семейного отдыха и мероприятий в районе Абай, Ташкент.</p>
-    </div>
-
-    <div class="footer__col">
-      <h4>Навигация</h4>
-      <a href="#about">О даче</a>
-      <a href="#dacha">Дача</a>
-      <a href="#gallery">Галерея</a>
-      <a href="#reviews">Отзывы</a>
-      <a href="#faq">Вопросы</a>
-    </div>
-
-    <div class="footer__col">
-      <h4>Контакты</h4>
-      <a href="tel:+998998395988">+998 99 839 59 88</a>
-      <a href="https://t.me/timenub" target="_blank" rel="noopener">@timenub</a>
-      <a href="https://instagram.com/usensardorbekov" target="_blank" rel="noopener">@usensardorbekov</a>
-    </div>
-
-    <div class="footer__col">
-      <h4>Бронирование</h4>
-      <a href="#booking" class="btn btn--gold btn--sm">Оставить заявку</a>
-    </div>
-  </div>
-
-  <div class="container footer__bottom">
-    <span>© <span id="year"></span> Abay Dacha. Все права защищены.</span>
-    <span class="footer__made">Сделано с заботой о госте</span>
-  </div>
-</footer>
-
-<!-- Floating actions -->
-<div class="floating-actions">
-  <a href="https://wa.me/998998395988" target="_blank" rel="noopener" class="fab fab--whatsapp" aria-label="Написать в WhatsApp">
-    <svg viewBox="0 0 24 24"><path d="M4 20l1.4-4.2A8 8 0 1 1 9 18.4L4 20Z"/></svg>
-  </a>
-  <a href="https://t.me/timenub" target="_blank" rel="noopener" class="fab fab--telegram" aria-label="Написать в Telegram">
-    <svg viewBox="0 0 24 24"><path d="M21.5 3.5 2.7 10.9c-1.1.4-1.1 1 .1 1.4l4.8 1.5 1.8 5.7c.2.6.4.8.9.8.3 0 .5-.1.7-.3l2.6-2.5 4.9 3.6c.9.5 1.5.2 1.8-.8L22.4 4.7c.3-1.2-.4-1.7-1.5-1.2z"/></svg>
-  </a>
-  <button class="fab fab--top" id="backToTop" aria-label="Наверх">
-    <svg viewBox="0 0 24 24"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg>
-  </button>
-</div>
-
-<!-- Toast -->
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-<script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
