@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Дача Абай</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Абай Дача</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О даче</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+
+        <button class="btn-contact" id="contactBtn">Связаться</button>
+
+        <div class="burger-menu" id="burgerToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="page-hero reveal">
+        <a href="index.html" class="btn-back">← Назад на главную</a>
+        <span class="hero-eyebrow">Контакты</span>
+        <h1>Как нас найти</h1>
+        <p class="subtitle">Мы находимся в экологически чистом районе, куда легко добраться на машине.</p>
+    </div>
+
+    <section id="contacts" class="section">
+        <div class="grid-about" style="margin-bottom: 50px;">
+            <div class="card reveal">
+                <h3>Адрес</h3>
+                <p>Узбекистан, город Ташкент, район Абай.</p>
+            </div>
+            <div class="card reveal reveal-delay-1">
+                <h3>Телефон / Эл. почта</h3>
+                <p>(+998) 99 839 59 88<br> usen060112@gmail.com</p>
+            </div>
+            <div class="card reveal reveal-delay-2">
+                <h3>Время работы</h3>
+                <p>Принимаем гостей круглый месяц.<br>Заселение 24/7 по брони.</p>
+            </div>
+        </div>
+
+        <!-- Современная адаптивная карта + контактная информация -->
+        <div class="contact-split reveal">
+            <div class="map-wrap">
+                <iframe
+                    src="https://www.google.com/maps?q=Tashkent,Abay%20district&z=13&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Карта — Дача Абай, Ташкент">
+                </iframe>
+            </div>
+            <div class="contact-info-card">
+                <div class="contact-info-row">
+                    <div class="ci-icon">📍</div>
+                    <div>
+                        <h4>Адрес</h4>
+                        <p>Узбекистан, город Ташкент, район Абай</p>
+                    </div>
+                </div>
+                <div class="contact-info-row">
+                    <div class="ci-icon">📞</div>
+                    <div>
+                        <h4>Телефон</h4>
+                        <p>(+998) 99 839 59 88</p>
+                    </div>
+                </div>
+                <div class="contact-info-row">
+                    <div class="ci-icon">✉️</div>
+                    <div>
+                        <h4>Эл. почта</h4>
+                        <p>usen060112@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-info-row">
+                    <div class="ci-icon">🕐</div>
+                    <div>
+                        <h4>Заселение</h4>
+                        <p>Круглый месяц, 24/7 по предварительной брони</p>
+                    </div>
+                </div>
+                   <button class="btn-primary" onclick="window.open('https://t.me/timenub', '_blank')">Написать нам</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 20px;">
+        <!-- Виджет погоды -->
+        <div class="weather-widget reveal">
+            <div class="weather-info">
+                <h3>Погода в Абае прямо сейчас:</h3>
+                <div class="weather-row">
+                    <span id="weather-temp" class="weather-temp">43°C</span>
+                    <span id="weather-desc" class="weather-desc"></span>
+                </div>
+            </div>
+            <div class="weather-tip">💡 Идеальное время, чтобы разжечь камин или пожарить барбекю!</div>
+        </div>
+    </section>
+
+    <!-- Современный футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Дача Абай</div>
+            <nav class="footer-nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О даче</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="footer-socials">
+               <a href="https://t.me./timenub" target="_blank">Telegram</a>
+                <a href="https://wa.me./998395988">WhatsApp</a>
+                <a href="https://instagram.com./sardorbekovusen" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Дача Абай. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
