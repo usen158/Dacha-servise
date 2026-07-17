@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дача Абай — Премиальный загородный отдых у Ташкента</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Адаптивная навигация с бургер-меню -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Дача Абай</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О даче</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+
+        <button class="btn-contact" id="contactBtn">Связаться</button>
+
+        <div class="burger-menu" id="burgerToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-eyebrow">Район Абай · 15 минут от города</span>
+            <h1>Отдых от городской суеты</h1>
+            <p>Премиальное эко-пространство с бассейном, беседкой и полной приватностью — для семейного отдыха и полной перезагрузки ума.</p>
+
+            <!-- Плавающие стеклянные карточки: рейтинг, гости, цена -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">4.9 ★</span>
+                    <span class="stat-label">рейтинг гостей</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">до 8</span>
+                    <span class="stat-label">гостей</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">от 800k</span>
+                    <span class="stat-label">сум / сутки</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">минут от города</span>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="gallery.html" class="btn-primary">Смотреть галерею</a>
+                <a href="about.html" class="btn-secondary">О даче и цены</a>
+            </div>
+
+            <div class="hero-features">
+                <div class="feat-box">
+                    <h4>🔥 Кухня и мангал</h4>
+                    <p>Всё для готовки на воздухе</p>
+                </div>
+                <div class="feat-box">
+                    <h4>🏡 Беседка</h4>
+                    <p>Вид на вековой лес</p>
+                </div>
+                <div class="feat-box">
+                    <h4>🌲 Двор для отдыха</h4>
+                    <p>Вдали от трасс и шума</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Почему выбирают нас -->
+    <section class="section" id="why-us">
+        <div class="section-head reveal">
+            <span class="eyebrow">Наши преимущества</span>
+            <h2>Почему выбирают нас</h2>
+            <p class="subtitle">Всё продумано для того, чтобы вы просто отдыхали</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon">🏊</div>
+                <h3>Большой бассейн</h3>
+                <p>Просторная чаша с подогревом воды в прохладные вечера</p>
+            </div>
+            <div class="feature-card reveal reveal-delay-1">
+                <div class="feature-icon">🔥</div>
+                <h3>Зона барбекю</h3>
+                <p>Мангал, беседка и всё необходимое для пикника</p>
+            </div>
+            <div class="feature-card reveal reveal-delay-2">
+                <div class="feature-icon">🍳</div>
+                <h3>Современная кухня</h3>
+                <p>Полностью оборудованная кухня с посудой и техникой</p>
+            </div>
+            <div class="feature-card reveal reveal-delay-3">
+                <div class="feature-icon">📶</div>
+                <h3>Wi-Fi</h3>
+                <p>Быстрый интернет по всей территории дачи</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🚗</div>
+                <h3>Парковка</h3>
+                <p>Бесплатное место для нескольких автомобилей</p>
+            </div>
+            <div class="feature-card reveal reveal-delay-1">
+                <div class="feature-icon">🔒</div>
+                <h3>Полная приватность</h3>
+                <p>Огороженная территория только для вас и ваших гостей</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бронирование -->
+    <section class="section" style="background: #ffffff; border-radius: 40px; margin: 60px auto; max-width: 90%; border: 1px solid #eef0ec; box-shadow: 0 20px 50px rgba(42, 71, 54, 0.03); padding-top: 70px; padding-bottom: 70px;">
+        <div class="booking-modern reveal">
+            <div class="booking-header-block">
+                <span class="eyebrow">Бронирование</span>
+                <h2>Начните своё загородное приключение</h2>
+                <p class="subtitle" style="margin-bottom: 0;">Выберите удобные даты, чтобы зафиксировать за собой дом</p>
+            </div>
+
+            <form class="booking-form-grid" id="mainBookingForm">
+                <div class="booking-input-box">
+                    <label for="checkin">Дата заезда</label>
+                    <input type="date" id="checkin" required>
+                </div>
+
+                <div class="booking-input-box">
+                    <label for="checkout">Дата выезда</label>
+                    <input type="date" id="checkout" required>
+                </div>
+
+                <div class="booking-input-box">
+                    <label for="guests">Количество гостей</label>
+                    <select id="guests">
+                        <option value="1">1 гость</option>
+                        <option value="2">2 гостя</option>
+                        <option value="4" selected>До 4 гостей</option>
+                        <option value="6">До 6 гостей</option>
+                        <option value="custom">Больше (компания)</option>
+                    </select>
+                </div>
+
+                <div class="booking-submit-box">
+                    <button type="submit" class="btn-primary" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; padding: 0;">
+                        Проверить доступность
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Как проходит бронирование -->
+    <section class="section" id="booking-steps">
+        <div class="section-head reveal">
+            <span class="eyebrow">Просто и быстро</span>
+            <h2>Как проходит бронирование</h2>
+            <p class="subtitle">Четыре шага до вашего отдыха на природе</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-step reveal">
+                <div class="timeline-num">1</div>
+                <h3>Выбираете даты</h3>
+                <p>Указываете заезд и выезд в форме бронирования</p>
+            </div>
+            <div class="timeline-step reveal reveal-delay-1">
+                <div class="timeline-num">2</div>
+                <h3>Отправляете заявку</h3>
+                <p>Оставляете контакты — мы свяжемся с вами</p>
+            </div>
+            <div class="timeline-step reveal reveal-delay-2">
+                <div class="timeline-num">3</div>
+                <h3>Подтверждаем бронь</h3>
+                <p>Согласовываем детали и закрепляем дом за вами</p>
+            </div>
+            <div class="timeline-step reveal reveal-delay-3">
+                <div class="timeline-num">4</div>
+                <h3>Заезжаете отдыхать</h3>
+                <p>Встречаем вас и передаём ключи от дачи</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Финальный CTA -->
+    <section class="final-cta reveal-scale">
+        <div class="final-cta-content">
+            <span class="eyebrow" style="color: var(--brass-light);">Готовы отдохнуть?</span>
+            <h2>Забронируйте дачу Абай уже сегодня</h2>
+            <p>Свободные даты быстро разбирают — оставьте заявку, и мы поможем подобрать удобный период для вашего отдыха.</p>
+            <button class="btn-primary" id="finalCtaBtn" onclick="document.getElementById('contactBtn').click()">Забронировать сейчас</button>
+        </div>
+    </section>
+
+    <!-- Модальное окно скрыто по умолчанию -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-btn" style="position:absolute; top:20px; right:25px; font-size:28px; cursor:pointer; color:#a0a8a2;">&times;</span>
+            <h2 style="margin-bottom:10px;">Забронировать отдых</h2>
+            <p style="color:#718096; margin-bottom:20px;">Оставьте контакты, мы перезвоним в течение 15 минут.</p>
+            <form style="display:flex; flex-direction:column; gap:15px;">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Номер телефона" inputmode="numeric" pattern="[0-9+\s()-]*" required>
+                <button type="submit" class="btn-contact" style="padding:16px; border-radius:14px;">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Современный футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Дача Абай</div>
+            <nav class="footer-nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О даче</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="footer-socials">
+              <a href="https://t.me/+998998395988" target="_blank">Telegram</a>
+                <a href="https://wa.me./998395988">WhatsApp</a>
+                <a href="https://instagram.com./sardorbekovusen" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Дача Абай. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
