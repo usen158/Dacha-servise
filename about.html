@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О даче — Дача Абай</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Абай Дача</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О даче</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+
+        <button class="btn-contact" id="contactBtn">Связаться</button>
+
+        <div class="burger-menu" id="burgerToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="page-hero reveal">
+        <span class="hero-eyebrow">О даче</span>
+        <h1>Идеальное сочетание комфорта и природы</h1>
+        <p class="subtitle">Дом построен из натурального бруса в 15 минутах от города — тишина, свежий воздух и всё для полноценного отдыха.</p>
+    </div>
+
+    <section id="about" class="section">
+        <div class="about-split">
+            <div class="about-split-img reveal">
+                <img src="./img/544ee8f8-6926-4258-8ec1-f348be6acf35.jpg" alt="Территория дачи Абай с бассейном">
+                <div class="about-split-badge">
+                    <span class="stat-number">4.9 ★</span>
+                    <span class="stat-label">на основе отзывов гостей</span>
+                </div>
+            </div>
+            <div class="about-split-text reveal reveal-delay-1">
+                <span class="eyebrow" style="justify-content:flex-start;">Наш уголок</span>
+                <h2>О нашем уголке</h2>
+                <p>Всего в 15 минутах от города — но будто в другом мире. Дом построен из натурального бруса, вокруг растут вековые деревья, а из окон открывается вид на зелёный двор. Высокоскоростной интернет, современная кухня и панорамные окна делают отдых комфортным в любое время года.</p>
+                <div class="numbers-grid">
+                    <div class="number-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">спальни / комнаты</span>
+                    </div>
+                    <div class="number-item">
+                        <span class="stat-number">120 м²</span>
+                        <span class="stat-label">общая площадь</span>
+                    </div>
+                    <div class="number-item">
+                        <span class="stat-number">до 8</span>
+                        <span class="stat-label">гостей</span>
+                    </div>
+                    <div class="number-item">
+                        <span class="stat-number">✓</span>
+                        <span class="stat-label">бесплатная парковка</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Что входит в стоимость -->
+    <section class="section" id="amenities">
+        <div class="section-head reveal">
+            <span class="eyebrow">Инфраструктура</span>
+            <h2>Что входит в стоимость</h2>
+            <p class="subtitle">Всё необходимое уже включено — доплачивать за базовые удобства не нужно</p>
+        </div>
+        <div class="amenities-grid">
+            <div class="amenity-chip reveal"><span class="check">✓</span><span class="label">Wi-Fi</span></div>
+            <div class="amenity-chip reveal"><span class="check">✓</span><span class="label">Бассейн</span></div>
+            <div class="amenity-chip reveal"><span class="check">✓</span><span class="label">Мангал</span></div>
+            <div class="amenity-chip reveal"><span class="check">✓</span><span class="label">Телевизор</span></div>
+            <div class="amenity-chip reveal"><span class="check">✓</span><span class="label">Кухня</span></div>
+            <div class="amenity-chip reveal"><span class="check">✓</span><span class="label">Посуда</span></div>
+            <div class="amenity-chip reveal"><span class="check">✓</span><span class="label">Кондиционер</span></div>
+            <div class="amenity-chip reveal"><span class="check">✓</span><span class="label">Парковка</span></div>
+            <div class="amenity-chip reveal"><span class="check">✓</span><span class="label">Беседка</span></div>
+        </div>
+    </section>
+
+    <section id="calculator" class="section">
+        <div class="section-head reveal">
+            <span class="eyebrow">Стоимость</span>
+            <h2>Рассчитать стоимость</h2>
+            <p class="subtitle">Узнайте предварительную цену за пару кликов</p>
+        </div>
+        <div class="calc-container reveal">
+            <div class="calc-block">
+                <label for="days">Количество дней:</label>
+                <input type="number" id="days" min="1" value="1">
+                <label style="margin-bottom:14px;">Дополнительные опции:</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" value="150000"> Ранний заезд (+150 000)
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" value="100000"> Доп. уборка (+100 000)
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" value="80000"> Дрова для мангала (+80 000)
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" value="120000"> Трансфер из города (+120 000)
+                    </label>
+                </div>
+            </div>
+            <div class="calc-result">
+                <h3>Итоговая цена:</h3>
+                <div class="price-display"><span id="totalPrice">800.000</span> сум</div>
+                <p style="opacity:0.7; font-size:0.9rem;">*Базовая ставка: 800 000 сум / сутки</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="section-head reveal">
+            <span class="eyebrow">Вопросы и ответы</span>
+            <h2>Частые вопросы</h2>
+            <p class="subtitle">Отвечаем на то, что важно знать перед поездкой</p>
+        </div>
+        <div class="faq-container reveal">
+            <div class="faq-item">
+                <button class="faq-question">Можно ли приехать с детьми? <span class="arrow">+</span></button>
+                <div class="faq-answer"><p>Да, конечно! Территория безопасна и огорожена, во дворе достаточно места для игр.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Есть ли парковка? <span class="arrow">+</span></button>
+                <div class="faq-answer"><p>Да, на территории есть бесплатная парковка на несколько автомобилей.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Можно ли приехать с домашними животными? <span class="arrow">+</span></button>
+                <div class="faq-answer"><p>Да, мы рады гостям с воспитанными питомцами! Пожалуйста, предупредите нас об этом заранее.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Есть ли бассейн? <span class="arrow">+</span></button>
+                <div class="faq-answer"><p>Да, на территории есть большой бассейн, доступный гостям в течение всего пребывания.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Во сколько заезд и выезд? <span class="arrow">+</span></button>
+                <div class="faq-answer"><p>Стандартное время заезда — с 14:00, выезда — до 12:00. Ранний заезд возможен по согласованию.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Современный футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Дача Абай</div>
+            <nav class="footer-nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О даче</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="footer-socials">
+               <a href="https://t.me./timenub" target="_blank">Telegram</a>
+                <a href="https://wa.me./998395988">WhatsApp</a>
+                <a href="https://instagram.com./sardorbekovusen" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Дача Абай. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
