@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея — Дача Абай</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Дача Абай</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О даче</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+
+        <button class="btn-contact" id="contactBtn">Связаться</button>
+
+        <div class="burger-menu" id="burgerToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="page-hero reveal">
+        <span class="hero-eyebrow">Галерея</span>
+        <h1>Атмосфера отдыха</h1>
+        <p class="subtitle">Взгляните на интерьер дома, бассейн и окружающую его природу</p>
+    </div>
+
+    <section id="gallery" class="section">
+        <div class="gallery-grid">
+            <div class="gallery-item g-wide reveal" style="background-image: url('./img/544ee8f8-6926-4258-8ec1-f348be6acf35.jpg');"></div>
+            <div class="gallery-item g-tall reveal reveal-delay-1" style="background-image: url('./img/4e7538e8-0100-4431-b344-4ab8b36b331d.jpg');"></div>
+            <div class="gallery-item reveal reveal-delay-2" style="background-image: url('./img/46a87e9f-25e1-43c9-b0d0-d596c316aee6.jpg');"></div>
+            <div class="gallery-item reveal reveal-delay-3" style="background-image: url('./img/46a87e9f-25e1-43c9-b0d0-d596c316aee6.jpg');"></div>
+            <div class="gallery-item g-mid reveal" style="background-image: url('./img/544ee8f8-6926-4258-8ec1-f348be6acf35.jpg');"></div>
+            <div class="gallery-item reveal reveal-delay-1" style="background-image: url('./img/4e7538e8-0100-4431-b344-4ab8b36b331d.jpg');"></div>
+        </div>
+        <div class="gallery-more-wrap reveal">
+            <a href="#gallery" class="btn-secondary">Посмотреть все фотографии</a>
+        </div>
+    </section>
+
+    <section id="reviews" class="section" style="background:#f5f5f5; border-radius: 40px 40px 0 0;">
+        <div class="section-head reveal">
+            <span class="eyebrow">Отзывы гостей</span>
+            <h2>Что говорят гости</h2>
+            <p class="subtitle">Искренние отзывы тех, кто уже отдохнул у нас</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card reveal">
+                <div class="review-top">
+                    <div class="avatar">Б</div>
+                    <div>
+                        <div class="review-name">Bahtiryarovna L.</div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"Потрясающее место! Тихо, поют птицы, а внутри дома пахнет свежим деревом. Обязательно вернемся осенью."</p>
+            </div>
+            <div class="review-card reveal reveal-delay-1">
+                <div class="review-top">
+                    <div class="avatar">Ш</div>
+                    <div>
+                        <div class="review-name">Shuxratovna D.</div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"Идеально для работы на удаленке. Интернет летает, вид из окон шикарный, а вечером баня — чистый кайф!"</p>
+            </div>
+            <div class="review-card reveal reveal-delay-2">
+                <div class="review-top">
+                    <div class="avatar">А</div>
+                    <div>
+                        <div class="review-name">Azamat K.</div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"Бассейн, мангал, беседка — собрались большой компанией, всем хватило места. Обязательно приедем ещё раз."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox для просмотра фотографий -->
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-img" src="" alt="Увеличенное фото">
+    </div>
+
+    <!-- Современный футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Дача Абай</div>
+            <nav class="footer-nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О даче</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="footer-socials">
+               <a href="https://t.me./timenub" target="_blank">Telegram</a>
+                <a href="https://wa.me./998395988">WhatsApp</a>
+                <a href="https://instagram.com./sardorbekovusen" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Дача Абай. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
