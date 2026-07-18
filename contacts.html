@@ -12,13 +12,18 @@
         <a href="index.html" class="logo">Абай Дача</a>
 
         <nav class="nav-links">
-            <a href="index.html">Главная</a>
-            <a href="about.html">О даче</a>
-            <a href="gallery.html">Галерея</a>
-            <a href="contacts.html">Контакты</a>
+            <a href="index.html" data-i18n="home">Главная</a>
+            <a href="about.html" data-i18n="about">О даче</a>
+            <a href="gallery.html" data-i18n="gallery">Галерея</a>
+            <a href="contacts.html" data-i18n="contacts">Контакты</a>
         </nav>
 
-        <button class="btn-contact" id="contactBtn">Связаться</button>
+        <div class="language-switch">
+            <button class="lang-btn" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="uz">UZ</button>
+        </div>
+
+        <button class="btn-contact" id="contactBtn" data-i18n="contact_btn">Связаться</button>
 
         <div class="burger-menu" id="burgerToggle">
             <span></span>
@@ -28,25 +33,25 @@
     </header>
 
     <div class="page-hero reveal">
-        <a href="index.html" class="btn-back">← Назад на главную</a>
-        <span class="hero-eyebrow">Контакты</span>
-        <h1>Как нас найти</h1>
-        <p class="subtitle">Мы находимся в экологически чистом районе, куда легко добраться на машине.</p>
+        <a href="index.html" class="btn-back" data-i18n="back_link">← Назад на главную</a>
+        <span class="hero-eyebrow" data-i18n="contacts_hero_eyebrow">Контакты</span>
+        <h1 data-i18n="contacts_hero_title">Как нас найти</h1>
+        <p class="subtitle" data-i18n="contacts_hero_subtitle">Мы находимся в экологически чистом районе, куда легко добраться на машине.</p>
     </div>
 
     <section id="contacts" class="section">
         <div class="grid-about" style="margin-bottom: 50px;">
             <div class="card reveal">
-                <h3>Адрес</h3>
-                <p>Узбекистан, город Ташкент, район Абай.</p>
+                <h3 data-i18n="card1_title">Адрес</h3>
+                <p data-i18n="card1_text">Узбекистан, город Ташкент, район Абай.</p>
             </div>
             <div class="card reveal reveal-delay-1">
-                <h3>Телефон / Эл. почта</h3>
+                <h3 data-i18n="card2_title">Телефон / Эл. почта</h3>
                 <p>(+998) 99 839 59 88<br> usen060112@gmail.com</p>
             </div>
             <div class="card reveal reveal-delay-2">
-                <h3>Время работы</h3>
-                <p>Принимаем гостей круглый месяц.<br>Заселение 24/7 по брони.</p>
+                <h3 data-i18n="card3_title">Время работы</h3>
+                <p data-i18n-html="card3_text">Принимаем гостей круглый месяц.<br>Заселение 24/7 по брони.</p>
             </div>
         </div>
 
@@ -64,32 +69,32 @@
                 <div class="contact-info-row">
                     <div class="ci-icon">📍</div>
                     <div>
-                        <h4>Адрес</h4>
-                        <p>Узбекистан, город Ташкент, район Абай</p>
+                        <h4 data-i18n="ci_addr_title">Адрес</h4>
+                        <p data-i18n="ci_addr_text">Узбекистан, город Ташкент, район Абай</p>
                     </div>
                 </div>
                 <div class="contact-info-row">
                     <div class="ci-icon">📞</div>
                     <div>
-                        <h4>Телефон</h4>
+                        <h4 data-i18n="ci_phone_title">Телефон</h4>
                         <p>(+998) 99 839 59 88</p>
                     </div>
                 </div>
                 <div class="contact-info-row">
                     <div class="ci-icon">✉️</div>
                     <div>
-                        <h4>Эл. почта</h4>
+                        <h4 data-i18n="ci_email_title">Эл. почта</h4>
                         <p>usen060112@gmail.com</p>
                     </div>
                 </div>
                 <div class="contact-info-row">
                     <div class="ci-icon">🕐</div>
                     <div>
-                        <h4>Заселение</h4>
-                        <p>Круглый месяц, 24/7 по предварительной брони</p>
+                        <h4 data-i18n="ci_checkin_title">Заселение</h4>
+                        <p data-i18n="ci_checkin_text">Круглый месяц, 24/7 по предварительной брони</p>
                     </div>
                 </div>
-                   <button class="btn-primary" onclick="window.open('https://t.me/timenub', '_blank')">Написать нам</button>
+                   <button class="btn-primary" onclick="window.open('https://t.me/timenub', '_blank')" data-i18n="btn_write">Написать нам</button>
             </div>
         </div>
     </section>
@@ -98,13 +103,13 @@
         <!-- Виджет погоды -->
         <div class="weather-widget reveal">
             <div class="weather-info">
-                <h3>Погода в Абае прямо сейчас:</h3>
+                <h3 data-i18n="weather_title">Погода в Абае прямо сейчас:</h3>
                 <div class="weather-row">
                     <span id="weather-temp" class="weather-temp">43°C</span>
                     <span id="weather-desc" class="weather-desc"></span>
                 </div>
             </div>
-            <div class="weather-tip">💡 Идеальное время, чтобы разжечь камин или пожарить барбекю!</div>
+            <div class="weather-tip" data-i18n="weather_tip">💡 Идеальное время, чтобы разжечь камин или пожарить барбекю!</div>
         </div>
     </section>
 
@@ -113,10 +118,10 @@
         <div class="footer-content">
             <div class="footer-logo">Дача Абай</div>
             <nav class="footer-nav">
-                <a href="index.html">Главная</a>
-                <a href="about.html">О даче</a>
-                <a href="gallery.html">Галерея</a>
-                <a href="contacts.html">Контакты</a>
+                <a href="index.html" data-i18n="home">Главная</a>
+                <a href="about.html" data-i18n="about">О даче</a>
+                <a href="gallery.html" data-i18n="gallery">Галерея</a>
+                <a href="contacts.html" data-i18n="contacts">Контакты</a>
             </nav>
             <div class="footer-socials">
                <a href="https://t.me./timenub" target="_blank">Telegram</a>
@@ -124,9 +129,10 @@
                 <a href="https://instagram.com./sardorbekovusen" target="_blank">Instagram</a>
             </div>
         </div>
-        <p class="footer-copy">© 2026 Дача Абай. Все права защищены.</p>
+        <p class="footer-copy" data-i18n="footer_copy">© 2026 Дача Абай. Все права защищены.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="lang.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
