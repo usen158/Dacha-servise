@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,13 +13,18 @@
         <a href="index.html" class="logo">Дача Абай</a>
 
         <nav class="nav-links">
-            <a href="index.html">Главная</a>
-            <a href="about.html">О даче</a>
-            <a href="gallery.html">Галерея</a>
-            <a href="contacts.html">Контакты</a>
+            <a href="index.html" data-i18n="home">Главная</a>
+            <a href="about.html" data-i18n="about">О даче</a>
+            <a href="gallery.html" data-i18n="gallery">Галерея</a>
+            <a href="contacts.html" data-i18n="contacts">Контакты</a>
         </nav>
 
-        <button class="btn-contact" id="contactBtn">Связаться</button>
+        <div class="language-switch">
+            <button class="lang-btn" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="uz">UZ</button>
+        </div>
+
+        <button class="btn-contact" id="contactBtn" data-i18n="contact_btn">Связаться</button>
 
         <div class="burger-menu" id="burgerToggle">
             <span></span>
@@ -28,9 +34,9 @@
     </header>
 
     <div class="page-hero reveal">
-        <span class="hero-eyebrow">Галерея</span>
-        <h1>Атмосфера отдыха</h1>
-        <p class="subtitle">Взгляните на интерьер дома, бассейн и окружающую его природу</p>
+        <span class="hero-eyebrow" data-i18n="gallery_hero_eyebrow">Галерея</span>
+        <h1 data-i18n="gallery_hero_title">Атмосфера отдыха</h1>
+        <p class="subtitle" data-i18n="gallery_hero_subtitle">Взгляните на интерьер дома, бассейн и окружающую его природу</p>
     </div>
 
     <section id="gallery" class="section">
@@ -38,20 +44,20 @@
             <div class="gallery-item g-wide reveal" style="background-image: url('./img/544ee8f8-6926-4258-8ec1-f348be6acf35.jpg');"></div>
             <div class="gallery-item g-tall reveal reveal-delay-1" style="background-image: url('./img/4e7538e8-0100-4431-b344-4ab8b36b331d.jpg');"></div>
             <div class="gallery-item reveal reveal-delay-2" style="background-image: url('./img/46a87e9f-25e1-43c9-b0d0-d596c316aee6.jpg');"></div>
-            <div class="gallery-item reveal reveal-delay-3" style="background-image: url('./img/46a87e9f-25e1-43c9-b0d0-d596c316aee6.jpg');"></div>
-            <div class="gallery-item g-mid reveal" style="background-image: url('./img/544ee8f8-6926-4258-8ec1-f348be6acf35.jpg');"></div>
-            <div class="gallery-item reveal reveal-delay-1" style="background-image: url('./img/4e7538e8-0100-4431-b344-4ab8b36b331d.jpg');"></div>
+            <div class="gallery-item reveal reveal-delay-3" style="background-image: url('./img/ffcaa8b2-0b58-467c-8dec-6ea4cea52c40.jpg');"></div>
+            <div class="gallery-item g-mid reveal" style="background-image: url('./img/a1f40f78-418a-4e75-be9c-8860a01f580e.jpg');"></div>
+            <div class="gallery-item reveal reveal-delay-1" style="background-image: url('./img/3c3485c1-42a9-4275-b9bb-f1f9e6f7c444.jpg');"></div>
         </div>
         <div class="gallery-more-wrap reveal">
-            <a href="#gallery" class="btn-secondary">Посмотреть все фотографии</a>
+            <a href="#gallery" class="btn-secondary" data-i18n="gallery_more_btn">Посмотреть все фотографии</a>
         </div>
     </section>
 
     <section id="reviews" class="section" style="background:#f5f5f5; border-radius: 40px 40px 0 0;">
         <div class="section-head reveal">
-            <span class="eyebrow">Отзывы гостей</span>
-            <h2>Что говорят гости</h2>
-            <p class="subtitle">Искренние отзывы тех, кто уже отдохнул у нас</p>
+            <span class="eyebrow" data-i18n="reviews_eyebrow">Отзывы гостей</span>
+            <h2 data-i18n="reviews_title">Что говорят гости</h2>
+            <p class="subtitle" data-i18n="reviews_subtitle">Искренние отзывы тех, кто уже отдохнул у нас</p>
         </div>
         <div class="reviews-grid">
             <div class="review-card reveal">
@@ -62,7 +68,7 @@
                         <div class="rating">★★★★★</div>
                     </div>
                 </div>
-                <p class="review-text">"Потрясающее место! Тихо, поют птицы, а внутри дома пахнет свежим деревом. Обязательно вернемся осенью."</p>
+                <p class="review-text" data-i18n="review1">"Потрясающее место! Тихо, поют птицы, а внутри дома пахнет свежим деревом. Обязательно вернемся осенью."</p>
             </div>
             <div class="review-card reveal reveal-delay-1">
                 <div class="review-top">
@@ -72,7 +78,7 @@
                         <div class="rating">★★★★★</div>
                     </div>
                 </div>
-                <p class="review-text">"Идеально для работы на удаленке. Интернет летает, вид из окон шикарный, а вечером баня — чистый кайф!"</p>
+                <p class="review-text" data-i18n="review2">"Идеально для работы на удаленке. Интернет летает, вид из окон шикарный, а вечером баня — чистый кайф!"</p>
             </div>
             <div class="review-card reveal reveal-delay-2">
                 <div class="review-top">
@@ -82,7 +88,7 @@
                         <div class="rating">★★★★★</div>
                     </div>
                 </div>
-                <p class="review-text">"Бассейн, мангал, беседка — собрались большой компанией, всем хватило места. Обязательно приедем ещё раз."</p>
+                <p class="review-text" data-i18n="review3">"Бассейн, мангал, беседка — собрались большой компанией, всем хватило места. Обязательно приедем ещё раз."</p>
             </div>
         </div>
     </section>
@@ -97,10 +103,10 @@
         <div class="footer-content">
             <div class="footer-logo">Дача Абай</div>
             <nav class="footer-nav">
-                <a href="index.html">Главная</a>
-                <a href="about.html">О даче</a>
-                <a href="gallery.html">Галерея</a>
-                <a href="contacts.html">Контакты</a>
+                <a href="index.html" data-i18n="home">Главная</a>
+                <a href="about.html" data-i18n="about">О даче</a>
+                <a href="gallery.html" data-i18n="gallery">Галерея</a>
+                <a href="contacts.html" data-i18n="contacts">Контакты</a>
             </nav>
             <div class="footer-socials">
                <a href="https://t.me./timenub" target="_blank">Telegram</a>
@@ -108,9 +114,10 @@
                 <a href="https://instagram.com./sardorbekovusen" target="_blank">Instagram</a>
             </div>
         </div>
-        <p class="footer-copy">© 2026 Дача Абай. Все права защищены.</p>
+        <p class="footer-copy" data-i18n="footer_copy">© 2026 Дача Абай. Все права защищены.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="lang.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
