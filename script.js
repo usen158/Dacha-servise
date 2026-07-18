@@ -154,7 +154,7 @@ if (tempEl && descEl) {
     async function getWeather() {
         try {
             // Исправленная и полностью рабочая ссылка на бесплатное API погоды
-            const response = await fetch(`https://open-meteo.com{lat}&longitude=${lon}&current_weather=true`);
+            const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
             const data = await response.json();
             
             if (data && data.current_weather) {
@@ -309,3 +309,5 @@ document.querySelectorAll('input[type="tel"]').forEach(input => {
         this.value = this.value.replace(/[^0-9+\s()-]/g, '');
     });
 });
+// Переключение языка теперь полностью реализовано в lang.js
+// (единая функция setLanguage(), словарь translations, работает на всех страницах)
